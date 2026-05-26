@@ -1,8 +1,7 @@
 [window]
-opacity = 0.92
-blur = true
+opacity = 0.75
+blur = false
 padding = { x = 12, y = 12 }
 decorations = "none"
-startup_mode = "Fullscreen"
-
+startup_mode = "Maximized"
 dynamic_padding = true

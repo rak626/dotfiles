@@ -2,6 +2,7 @@ general.import = [
     # "~/.config/alacritty/themes/rose-pine.toml",
     # "~/.config/alacritty/themes/everforest.toml",
     "~/.config/alacritty/themes/rose-pine-moon.toml",
+    # "~/.config/alacritty/themes/gruvbox.toml",
     "~/.config/alacritty/fonts.toml",
     "~/.config/alacritty/window.toml",
     "~/.config/alacritty/keybinds.toml",
