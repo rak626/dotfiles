@@ -1,6 +1,6 @@
 [window]
-opacity = 0.75
-blur = false
+opacity = 0.90
+blur = true
 padding = { x = 12, y = 12 }
 decorations = "none"
 startup_mode = "Maximized"
