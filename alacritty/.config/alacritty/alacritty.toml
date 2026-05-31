@@ -2,7 +2,8 @@ general.import = [
     # "~/.config/alacritty/themes/rose-pine.toml",
     # "~/.config/alacritty/themes/everforest.toml",
     # "~/.config/alacritty/themes/one-dark.toml",
-    "~/.config/alacritty/themes/rose-pine-moon.toml",
+    "~/.config/alacritty/themes/one-dark-pro.toml",
+    # "~/.config/alacritty/themes/rose-pine-moon.toml",
     # "~/.config/alacritty/themes/gruvbox.toml",
     "~/.config/alacritty/fonts.toml",
     "~/.config/alacritty/window.toml",
@@ -23,7 +24,7 @@ multiplier = 3
 save_to_clipboard = true
 
 [cursor]
-style = { shape = "Beam", blinking = "On" }
+style = { shape = "Block", blinking = "On" }
 
 [mouse]
 hide_when_typing = true

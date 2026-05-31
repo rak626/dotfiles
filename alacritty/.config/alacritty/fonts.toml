@@ -7,9 +7,12 @@ family = "IosevkaRakesh Nerd Font"
 
 [font.bold]
 family = "IosevkaRakesh Nerd Font"
+style = "Regular"
 
 [font.italic]
 family = "IosevkaRakesh Nerd Font"
+style = "Regular"
 
 [font.bold_italic]
 family = "IosevkaRakesh Nerd Font"
+style = "Regular"

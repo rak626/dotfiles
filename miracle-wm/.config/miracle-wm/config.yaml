@@ -1,0 +1,19 @@
+# ~/.config/miracle-wm/config.yaml
+# =====================================================================
+#                 MIRACLE-WM MASTER ORCHESTRATOR CONFIG
+# =====================================================================
+# Inspired by Hyprland fluid dynamics, i3 keyboard efficiency, and Gnome visual polish.
+# This file is modularly structured to divide settings into logically isolated files.
+
+# The primary modifier key for compositor commands (meta = Super/Windows key)
+action_key: meta
+
+# Load the modular configurations in order of priority.
+# Later files override earlier files. List configurations concatenated in sequence.
+includes:
+  - ~/.config/miracle-wm/styling.yaml
+  - ~/.config/miracle-wm/animations.yaml
+  - ~/.config/miracle-wm/workspaces.yaml
+  - ~/.config/miracle-wm/keybindings.yaml
+  - ~/.config/miracle-wm/custom_actions.yaml
+  - ~/.config/miracle-wm/startup.yaml

@@ -1,0 +1,31 @@
+# ~/.config/miracle-wm/startup.yaml
+# =====================================================================
+#                      STARTUP APPLICATIONS & DAEMONS
+# =====================================================================
+# Runs status bar, notification daemons, wallpaper managers, and polkit.
+
+startup_apps:
+  # -----------------------------------------------------------------
+  # Core Window Manager Utilities (Waybar & Mako Notifications)
+  # -----------------------------------------------------------------
+  - command: waybar
+    restart_on_death: true # Auto-restart if Waybar crashes or config updates
+
+  - command: mako
+    restart_on_death: true # Auto-restart if notification daemon fails
+
+  # -----------------------------------------------------------------
+  # Desktop Wallpaper Manager (swaybg)
+  # -----------------------------------------------------------------
+  - command: swaybg -m fill -i ~/dotfiles/backgrounds/wallpaper-2.png
+    restart_on_death: true
+
+  # -----------------------------------------------------------------
+  # System Applets & GUI Security Helpers
+  # -----------------------------------------------------------------
+  - command: nm-applet --indicator
+    restart_on_death: true # Wi-Fi and Network connections tray icon
+
+  # Gnome/GTK GUI Authentication Agent (required to run root dialogs in Wayland)
+  - command: /usr/libexec/polkit-gnome-authentication-agent-1
+    restart_on_death: true

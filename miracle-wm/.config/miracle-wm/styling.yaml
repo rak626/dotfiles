@@ -1,0 +1,29 @@
+# ~/.config/miracle-wm/styling.yaml
+# =====================================================================
+#                      VISUALS, BORDERS & GAPS
+# =====================================================================
+# Draws direct inspiration from Hyprland neon borders and Gnome soft aesthetics.
+
+border:
+  # Size of window border in pixels (2px provides a crisp outline without clutter)
+  size: 2
+  
+  # Corner radius in pixels for gorgeous rounded window frames (Gnome/Hyprland theme)
+  radius: 12
+  
+  # Hex border colors in 0xAARRGGBB format:
+  # Inactive border: Charcoal Gray (Catppuccin Crust - 0xff313244)
+  color: 0xff313244
+  
+  # Active focused border: Pastel Lavender / Mauve (Catppuccin Mauve - 0xffcba6f7)
+  focus_color: 0xffcba6f7
+
+# Gaps between adjacent tiled windows (in pixels)
+inner_gaps:
+  x: 8
+  y: 8
+
+# Gaps between windows and the screen outer boundary (in pixels)
+outer_gaps:
+  x: 10
+  y: 10

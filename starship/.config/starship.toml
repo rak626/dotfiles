@@ -6,7 +6,7 @@ $git_status \
 $cmd_duration\
 $character"""
 
-palette = "rose_pine_moon"
+palette = "one_dark"
 
 [username]
 show_always = false

@@ -1,0 +1,63 @@
+# ~/.config/miracle-wm/custom_actions.yaml
+# =====================================================================
+#                      CUSTOM LAUNCHERS & SYSTEM KEYS
+# =====================================================================
+# Integrates app launchers, media keys, and screenshot utilities.
+
+custom_actions:
+  # -----------------------------------------------------------------
+  # Application Launchers
+  # -----------------------------------------------------------------
+  - command: rofi -show drun
+    action: down
+    modifiers: [primary]
+    key: d # Super + D to open Rofi App Launcher (uses dotfiles theme)
+
+  - command: swaylock -f -c 1e1e2e
+    action: down
+    modifiers: [primary]
+    key: Escape # Super + Escape to lock the screen with swaylock
+
+  # -----------------------------------------------------------------
+  # Screenshot Capabilities (grim + slurp)
+  # -----------------------------------------------------------------
+  - command: grim -g "$(slurp)" - | wl-copy
+    action: down
+    modifiers: []
+    key: Print # PrintScreen (select area, copy to clipboard)
+
+  - command: grim - | wl-copy
+    action: down
+    modifiers: [shift]
+    key: Print # Shift + PrintScreen (full-screen, copy to clipboard)
+
+  # -----------------------------------------------------------------
+  # System Volume Controls (wireplumber / pulse audio fallback)
+  # -----------------------------------------------------------------
+  - command: wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+    action: down
+    modifiers: []
+    key: XF86AudioRaiseVolume # Volume Up Key
+
+  - command: wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+    action: down
+    modifiers: []
+    key: XF86AudioLowerVolume # Volume Down Key
+
+  - command: wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+    action: down
+    modifiers: []
+    key: XF86AudioMute # Mute Audio Key
+
+  # -----------------------------------------------------------------
+  # Laptop Monitor Brightness Controls (brightnessctl)
+  # -----------------------------------------------------------------
+  - command: brightnessctl set +5%
+    action: down
+    modifiers: []
+    key: XF86MonBrightnessUp # Brightness Up Key
+
+  - command: brightnessctl set 5%-
+    action: down
+    modifiers: []
+    key: XF86MonBrightnessDown # Brightness Down Key

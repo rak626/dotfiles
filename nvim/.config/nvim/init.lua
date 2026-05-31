@@ -29,13 +29,12 @@ local function ensure_plugin(url, name)
   end
 end
 
-ensure_plugin("https://github.com/rose-pine/neovim.git", "rose-pine")
+ensure_plugin("https://github.com/olimorris/onedarkpro.nvim.git", "onedarkpro")
 
-require("rose-pine").setup({
-  variant = "moon",
-  styles = {
+require("onedarkpro").setup({
+  options = {
     transparency = true,
   },
 })
 
-vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("onedark")

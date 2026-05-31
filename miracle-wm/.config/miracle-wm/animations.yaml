@@ -1,0 +1,39 @@
+# ~/.config/miracle-wm/animations.yaml
+# =====================================================================
+#                     FLUID MOTION & ANIMATIONS
+# =====================================================================
+# Powered by easing curves (from easings.net) to recreate Hyprland physics.
+
+animations:
+  # Window Spawning: Beautiful springy bounce zoom (Hyprland signature)
+  - event: window_open
+    duration: 0.28
+    type: built_in
+    parts:
+      - type: grow
+        function: ease_out_back
+        c1: 1.35 # spring factor stiffness
+
+  # Window Termination: Elegant fade away
+  - event: window_close
+    duration: 0.20
+    type: built_in
+    parts:
+      - type: fade
+        function: ease_in_cubic
+
+  # Virtual Desktops Swipe: Fluid, high-inertia gliding slide (Gnome signature)
+  - event: workspace_switch
+    duration: 0.38
+    type: built_in
+    parts:
+      - type: slide
+        function: ease_out_quint
+
+  # Window Reordering: Quick gliding slide when windows swap positions
+  - event: window_move
+    duration: 0.24
+    type: built_in
+    parts:
+      - type: slide
+        function: ease_out_circ

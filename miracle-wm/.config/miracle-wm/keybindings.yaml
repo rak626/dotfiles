@@ -1,0 +1,65 @@
+# ~/.config/miracle-wm/keybindings.yaml
+# =====================================================================
+#                      KEYBOARD SHORTCUTS (TILING & SYSTEM)
+# =====================================================================
+# Focuses exclusively on non-default overrides (Vim Navigation and Terminal).
+# All other standard tiling controls (workspaces, closing windows, exit,
+# floating/tabbed layouts) are handled by Miracle-WM's built-in defaults.
+
+# Sets your high-performance Alacritty terminal as default
+terminal: alacritty
+
+default_action_overrides:
+  # -----------------------------------------------------------------
+  # Vim-Style Window Navigation (Super + HJKL)
+  # -----------------------------------------------------------------
+  # Focus Left
+  - name: select_left
+    action: down
+    modifiers: [primary]
+    key: h
+
+  # Focus Down
+  - name: select_down
+    action: down
+    modifiers: [primary]
+    key: j
+
+  # Focus Up
+  - name: select_up
+    action: down
+    modifiers: [primary]
+    key: k
+
+  # Focus Right
+  - name: select_right
+    action: down
+    modifiers: [primary]
+    key: l
+
+  # -----------------------------------------------------------------
+  # Vim-Style Window Movement (Super + Shift + HJKL)
+  # -----------------------------------------------------------------
+  # Move Left
+  - name: move_left
+    action: down
+    modifiers: [primary, shift]
+    key: h
+
+  # Move Down
+  - name: move_down
+    action: down
+    modifiers: [primary, shift]
+    key: j
+
+  # Move Up
+  - name: move_up
+    action: down
+    modifiers: [primary, shift]
+    key: k
+
+  # Move Right
+  - name: move_right
+    action: down
+    modifiers: [primary, shift]
+    key: l
