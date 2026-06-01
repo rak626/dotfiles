@@ -18,8 +18,7 @@ case "$1" in
         ;;
 esac
 
-# Copy to clipboard
-wl-copy < "$FILE"
-
-# Notification
-notify-send "  Screenshot" "Saved & copied to clipboard"
+# If screenshot was taken successfully, open in Satty for editing
+if [ -f "$FILE" ]; then
+    satty --filename "$FILE" --output-filename "$FILE" --copy-command "wl-copy"
+fi

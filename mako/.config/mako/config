@@ -1,39 +1,51 @@
 # ===== GENERAL =====
-font=Iosevka Nerd Font 10
-background-color=#282828e6
-text-color=#ebdbb2
-border-color=#83a598
-
-width=340
-margin=25
-padding=14
+font=IosevkaRakesh Nerd Font 11
+background-color=#282c34f2
+text-color=#abb2bf
+border-color=#61afef
 border-size=2
-border-radius=14
+border-radius=8
+
+width=350
+margin=15
+padding=15
+anchor=top-right
+default-timeout=5000
+layer=overlay
+
+# ===== PROGRESS BARS =====
+progress-color=#98c379
 
 # ===== BEHAVIOR =====
-default-timeout=3500
-ignore-timeout=0
-anchor=top-right
+sort=-time
+max-visible=5
+max-history=10
 
 # ===== ICONS =====
 icons=1
-max-icon-size=36
+max-icon-size=48
 icon-path=/usr/share/icons/Papirus-Dark
 
 # ===== URGENCY =====
 [urgency=low]
-border-color=#928374
-background-color=#282828d9
+border-color=#5c6370
+background-color=#282c34d9
+default-timeout=3000
 
 [urgency=normal]
-border-color=#83a598
-background-color=#282828e6
+border-color=#61afef
+background-color=#282c34f2
 
 [urgency=critical]
-border-color=#fb4934
-background-color=#3c3836f2
-default-timeout=0
+border-color=#e06c75
+background-color=#282c34
+default-timeout=15000
 
 # ===== TEXT =====
 markup=1
-format=<span size="large"><b>%s</b></span>\n<span size="small">%b</span>
+format=<span size="large" weight="bold" foreground="#61afef">%s</span>\n%b
+
+# ===== APP SPECIFIC =====
+[app-name=Spotify]
+border-color=#1db954
+default-timeout=8000

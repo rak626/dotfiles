@@ -1,135 +1,40 @@
 {
     "layer": "top",
-    "modules-left": [
-        "hyprland/workspaces"
-    ],
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 0,
+    "modules-left": [],
     "modules-center": [
-        "clock"
-    ],
-    "modules-right": [
-        "network",
+        "clock",
+        "hyprland/workspaces",
         "pulseaudio",
-        "bluetooth",
-        "battery",
-        "custom/power-profile",
-        "custom/power"
+        "network",
+        "battery"
     ],
+    "modules-right": [],
     "battery": {
-        "format": "{capacity}% {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "interval": 300
+        "format": "{capacity}",
+        "interval": 60
     },
     "clock": {
         "interval": 60,
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%a, %d %b  %I:%M %p}",
+        "format": "{:%H:%M}",
         "tooltip": false
     },
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "urgent": "",
-            "active": "",
-            "default": ""
-        },
-        "sort-by-number": true,
-        "persistent-workspaces": {
-            "*": 5
-        },
-        "on-click": "activate",
-        "on-scroll-up": "hyprctl dispatch workspace e-1",
-        "on-scroll-down": "hyprctl dispatch workspace e+1"
-    },
-    "hyprland/window": {
-        "format": "{class}"
+        "format": "{name}",
+        "on-click": "activate"
     },
     "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "󰝟",
-        "format-icons": {
-            "headphone": "",
-            "headset": "",
-            "phone": "",
-            "phone-muted": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                ""
-            ]
-        },
-        "scroll-step": 4,
-        "on-click": "pavucontrol",
-        "ignored-sinks": [
-            "Easy Effects Sink"
-        ]
-    },
-    "bluetooth": {
-        "format": " {status}",
-        // "format-connected": " {device_alias}",
-        // "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-        "format-connected": "",
-        "format-connected-battery": "",
-        // "tooltip-format": "󰂯 {controller_alias}\n\n󰂺 Devices: {num_connections}",
-        // "tooltip-format-connected": "󰂺 Connected Devices ({num_connections})\n───────────────-----\n{device_enumerate}",
-        "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": " {device_alias}",
-        "tooltip-format-enumerate-connected-battery": " {device_alias} 󰁹 {device_battery_percentage}%",
-        "on-click": "blueman-manager"
-    },
-    "temperature": {
-        "thermal-zone": 2,
-        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        "format-critical": "{temperatureC}°C ",
-        "format": "{temperatureC}°C "
+        "format": "{volume}% <span size='130%'>󰕾</span>",
+        "on-click": "pavucontrol"
     },
     "network": {
-        "interface": [
-            "eno1",
-            "wlan0"
-        ],
-        "interval": 1,
-        "format": "{ifname} {bandwidthUpBytes} {bandwidthDownBytes} {bandwidthTotalBytes} {icon}",
-        "format-wifi": "  {essid} ({signalStrength}%)",
-        "format-ethernet": "  {ifname}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-        "format-disconnected": "", //An empty format will hide the module.
-        // "tooltip-format": "{ifname} via {gwaddr} 󰊗",
-        // "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-        // "tooltip-format-ethernet": "{ifname} ",
-        // "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50
-    },
-    "custom/power-profile": {
-        "exec": "~/.config/waybar/scripts/power-profile.sh",
-        "interval": 400,
-        "on-click": "~/.config/waybar/scripts/power-profile.sh toggle",
-        "return-type": "json",
-        "format": "{text}",
+        "format-wifi": "{essid} <span size='130%'>󰤨</span>",
+        "format-ethernet": "Wired <span size='130%'>󰈀</span>",
+        "format-disconnected": "Disconnected <span size='130%'>󰤮</span>",
         "tooltip": false
-    },
-    "custom/power": {
-        "format": "⏻ ",
-        "tooltip": false,
-        "menu": "on-click",
-        "menu-file": "~/.config/waybar/xmls/power_menu.xml",
-        "menu-actions": {
-            "shutdown": "shutdown",
-            "reboot": "reboot",
-            "suspend": "systemctl suspend",
-            "hibernate": "systemctl hibernate"
-        }
     }
 }
