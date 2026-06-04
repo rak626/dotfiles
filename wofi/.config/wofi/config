@@ -1,0 +1,14 @@
+show=drun
+width=400
+height=500
+always_parse_args=true
+show_all=false
+print_command=true
+layer=overlay
+allow_images=true
+image_size=48
+display_generic=true
+location=center
+hide_scroll=true
+insensitive=true
+prompt=Search...

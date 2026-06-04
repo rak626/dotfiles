@@ -22,4 +22,4 @@ configuration {
     terminal: "alacritty";
 }
 
-@theme "~/.config/rofi/themes/launcher.rasi"
+@theme "~/.config/rofi/themes/rose-pine-moon.rasi"

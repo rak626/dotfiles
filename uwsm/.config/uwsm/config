@@ -1,0 +1,21 @@
+# UWSM Configuration File
+# See 'man uwsm' for detailed options.
+
+# Use 'systemd' for application launching (standard Arch way)
+# This ensures apps launched via 'uwsm app --' get their own scopes.
+use_systemd=true
+
+# Wait for the compositor to signal readiness via 'wayland-0'
+# This prevents race conditions where apps try to start before the compositor is up.
+wait_for_wayland=true
+
+# Cleanup orphaned processes on session stop
+# This keeps your Arch system clean.
+cleanup_on_stop=true
+
+# Log session events to journald
+# You can check them with 'journalctl --user -u uwsm'
+log_to_journal=true
+
+# Default app launcher wrapper (optional, but good for consistency)
+# app_launcher="uwsm app --"

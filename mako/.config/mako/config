@@ -1,8 +1,8 @@
 # ===== GENERAL =====
 font=IosevkaRakesh Nerd Font 11
-background-color=#282c34f2
-text-color=#abb2bf
-border-color=#61afef
+background-color=#232136f2
+text-color=#e0def4
+border-color=#c4a7e7
 border-size=2
 border-radius=8
 
@@ -14,7 +14,7 @@ default-timeout=5000
 layer=overlay
 
 # ===== PROGRESS BARS =====
-progress-color=#98c379
+progress-color=#3e8fb0
 
 # ===== BEHAVIOR =====
 sort=-time
@@ -28,22 +28,22 @@ icon-path=/usr/share/icons/Papirus-Dark
 
 # ===== URGENCY =====
 [urgency=low]
-border-color=#5c6370
-background-color=#282c34d9
+border-color=#6e6a86
+background-color=#232136d9
 default-timeout=3000
 
 [urgency=normal]
-border-color=#61afef
-background-color=#282c34f2
+border-color=#c4a7e7
+background-color=#232136f2
 
 [urgency=critical]
-border-color=#e06c75
-background-color=#282c34
+border-color=#eb6f92
+background-color=#232136
 default-timeout=15000
 
 # ===== TEXT =====
 markup=1
-format=<span size="large" weight="bold" foreground="#61afef">%s</span>\n%b
+format=<span size="large" weight="bold" foreground="#c4a7e7">%s</span>\n%b
 
 # ===== APP SPECIFIC =====
 [app-name=Spotify]
