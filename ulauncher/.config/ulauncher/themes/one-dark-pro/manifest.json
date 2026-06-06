@@ -1,0 +1,12 @@
+{
+    "manifest_version": "1",
+    "name": "one-dark-pro",
+    "display_name": "One Dark Pro",
+    "extend_theme": "dark",
+    "css_file": "theme.css",
+    "css_file_gtk_3.20+": "theme.css",
+    "matched_text_hl_colors": {
+        "when_selected": "#61afef",
+        "when_not_selected": "#e06c75"
+    }
+}

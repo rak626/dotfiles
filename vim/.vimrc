@@ -126,11 +126,14 @@ vnoremap > >gv
 set termguicolors              " Enable 24-bit RGB true color support
 set cursorline                 " Highlight the line the cursor is currently on
 
-" Set the variant (options: rose-pine, rose-pine-moon, rose-pine-dawn)
-let g:rose_pine_variant = 'main'
+" Set the style (options: dark, darker, cool, deep, warm, warmer)
+let g:onedark_config = {
+    \ 'style': 'darker',
+    \ 'transparent': v:true,
+\}
 
-" Safely try to apply rose-pine; fallback to desert if not installed yet
-silent! colorscheme rose-pine
-if !exists('g:colors_name') || g:colors_name != 'rose-pine'
+" Safely try to apply onedark; fallback to desert if not installed yet
+silent! colorscheme onedark
+if !exists('g:colors_name') || g:colors_name != 'onedark'
     colorscheme desert
 endif

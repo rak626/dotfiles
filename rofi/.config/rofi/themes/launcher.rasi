@@ -1,12 +1,12 @@
 * {
-    bg:         #111019ee;
-    bg-alt:     #1a1826;
-    fg:         #e0def4;
-    selected:   #31748f;
-    active:     #9ccfd8;
-    urgent:     #eb6f92;
+    bg:         #282c34ee;
+    bg-alt:     #21252b;
+    fg:         #abb2bf;
+    selected:   #61afef;
+    active:     #98c379;
+    urgent:     #e06c75;
 
-    border:     #26233a;
+    border:     #3e4452;
 
     background-color: transparent;
     text-color: @fg;
@@ -65,7 +65,7 @@ element normal.normal {
 
 element selected.normal {
     background-color: @selected;
-    text-color: #ffffff;
+    text-color: #282c34;
 }
 
 element-icon {

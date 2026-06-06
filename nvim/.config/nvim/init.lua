@@ -29,12 +29,11 @@ local function ensure_plugin(url, name)
   end
 end
 
-ensure_plugin("https://github.com/olimorris/onedarkpro.nvim.git", "onedarkpro")
+ensure_plugin("https://github.com/navarasu/onedark.nvim", "onedark")
 
-require("onedarkpro").setup({
-  options = {
-    transparency = true,
-  },
+require("onedark").setup({
+  style = "atom",
+  transparent = true,
 })
 
-vim.cmd.colorscheme("onedark")
+require("onedark").load()
