@@ -1,5 +1,5 @@
 [window]
-opacity = 0.96
+opacity = 0.90
 blur = true
 padding = { x = 12, y = 12 }
 decorations = "none"

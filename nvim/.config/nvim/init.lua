@@ -31,9 +31,11 @@ end
 
 ensure_plugin("https://github.com/navarasu/onedark.nvim", "onedark")
 
+-- 1. Setup the configuration safely
 require("onedark").setup({
-  style = "atom",
+  style = "darker",
   transparent = true,
 })
 
-require("onedark").load()
+-- 2. Use the standard Neovim colorscheme command to load it instead of .load()
+vim.cmd("colorscheme onedark")
