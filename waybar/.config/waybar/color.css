@@ -1,19 +1,19 @@
-/* ===== ONE DARK COLOR PALETTE ===== */
+/* ===== One Dark Pro COLOR PALETTE ===== */
 
 @define-color bg0        #282c34;
-@define-color bg1        #353b45;
-@define-color bg2        #3e4451;
-@define-color bg_soft    #2c323c;
+@define-color bg1        #21252b;
+@define-color bg2        #3e4452;
+@define-color bg_soft    #2c313c;
 
-@define-color fg0        #ffffff;
+@define-color fg0        #abb2bf;
 @define-color fg1        #abb2bf;
-@define-color fg2        #828997;
+@define-color fg2        #5c6370;
 @define-color fg_muted   #5c6370;
 
 @define-color yellow     #e5c07b;
 @define-color orange     #d19a66;
 @define-color red        #e06c75;
-@define-color dark_red   #be5046;
+@define-color dark_red   #e06c75;
 
 @define-color green      #98c379;
 @define-color aqua       #56b6c2;
@@ -23,7 +23,7 @@
 /* ===== TRANSPARENCY VARIANTS ===== */
 
 @define-color bg_transparent rgba(40, 44, 52, 0.9);
-@define-color card_bg        rgba(53, 59, 69, 0.6);
+@define-color card_bg        rgba(33, 37, 43, 0.6);
 
 @define-color blue_soft      rgba(97, 175, 239, 0.15);
 @define-color red_soft       rgba(224, 108, 117, 0.2);

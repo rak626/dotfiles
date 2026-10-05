@@ -1,12 +1,12 @@
 /*
- * Rosé Pine Moon theme for SwayOSD
+ * One Dark Pro theme for SwayOSD
  */
 
 window#osd {
     padding: 12px 20px;
     border-radius: 12px;
-    border: 1px solid #44415a;
-    background: rgba(35, 33, 54, 0.9); /* #232136 with opacity */
+    border: 1px solid #3e4452;
+    background: rgba(40, 44, 52, 0.9); /* #282c34 with opacity */
 }
 
 #container {
@@ -14,16 +14,16 @@ window#osd {
 }
 
 image, label {
-    color: #e0def4;
+    color: #abb2bf;
 }
 
 progressbar trough {
     min-height: 10px;
     border-radius: 999px;
-    background: rgba(224, 221, 244, 0.1); /* #e0def4 with 10% opacity */
+    background: rgba(171, 178, 191, 0.1); /* #abb2bf with 10% opacity */
 }
 
 progressbar progress {
     border-radius: 999px;
-    background: #c4a7e7; /* Iris/Purple accent */
+    background: #61afef; /* Blue accent */
 }

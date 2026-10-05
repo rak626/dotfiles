@@ -126,14 +126,8 @@ vnoremap > >gv
 set termguicolors              " Enable 24-bit RGB true color support
 set cursorline                 " Highlight the line the cursor is currently on
 
-" Set the style (options: dark, darker, cool, deep, warm, warmer)
-let g:onedark_config = {
-    \ 'style': 'darker',
-    \ 'transparent': v:true,
-\}
-
-" Safely try to apply onedark; fallback to desert if not installed yet
+" Safely try to apply One Dark; fallback to desert if not installed yet
 silent! colorscheme onedark
-if !exists('g:colors_name') || g:colors_name != 'onedark'
+if !exists('g:colors_name') || g:colors_name !~ 'onedark'
     colorscheme desert
 endif

@@ -1,0 +1,10 @@
+# Zed extensions installed on 2026-10-04 (from ~/.local/share/zed/extensions/installed)
+# Reinstall via `zed: extensions` UI, or declare in settings.json:
+#   "auto_install_extensions": { "astro": true, "html": true, "java": true, "sql": true, "toml": true, "rose-pine-theme": true, "everforest": true }
+astro
+html
+java
+sql
+toml
+rose-pine-theme
+everforest

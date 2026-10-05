@@ -1,143 +1,187 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "file",
-    "source": "~/.config/fastfetch/logo.txt",
-    "color": { "1": "green" },
+    "type": "builtin",
     "padding": {
-      "top": 2,
-      "right": 6,
-      "left": 2
+      "top": 1,
+      "left": 2,
+      "right": 4
     }
   },
   "display": {
-    "separator": " ",
+    "separator": " → ",
     "color": {
-      "keys": "magenta"
+      "keys": "green",
+      "title": "green"
     }
   },
   "modules": [
-    "break",
+    "title",
+    "separator",
     {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+      "type": "os",
+      "key": "󰣇 OS        ",
+      "keyColor": "green",
+      "format": "{name} {version-id} ({arch})"
     },
     {
       "type": "host",
-      "key": "│  PC     ",
+      "key": " Host      ",
+      "keyColor": "green"
+    },
+    {
+      "type": "bios",
+      "key": " BIOS      ",
+      "keyColor": "green"
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel    ",
       "keyColor": "green"
     },
     {
       "type": "cpu",
-      "key": "│ ├ CPU    ",
-      "showPeCoreCount": true,
+      "key": " CPU       ",
       "keyColor": "green"
     },
     {
       "type": "gpu",
-      "key": "│ ├ GPU    ",
-      "detectionMethod": "pci",
-      "keyColor": "green"
+      "key": " GPU       ",
+      "keyColor": "green",
+      "detectionMethod": "pci"
     },
     {
-      "type": "display",
-      "key": "│ ├󱄄 DISP   ",
+      "type": "memory",
+      "key": " Memory    ",
       "keyColor": "green"
     },
     {
       "type": "disk",
-      "key": "│ ├󰋊 DISK   ",
+      "key": "󰋊 Disk      ",
+      "keyColor": "green",
+      "folders": "/"
+    },
+    {
+      "type": "battery",
+      "key": " Battery   ",
       "keyColor": "green"
     },
+    "separator",
     {
-      "type": "memory",
-      "key": "│ ├ MEM    ",
-      "keyColor": "green"
-    },
-    {
-      "type": "swap",
-      "key": "│ └󰓡 SWAP   ",
-      "keyColor": "green"
-    },
-    {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
-    },
-    {
-      "type": "os",
-      "key": "│ 󰣇 OS     ",
+      "type": "display",
+      "key": "󱄄 Display   ",
       "keyColor": "blue"
     },
     {
-      "type": "kernel",
-      "key": "│ ├ KERNEL ",
+      "type": "brightness",
+      "key": "󰃠 Brightness",
+      "keyColor": "blue"
+    },
+    {
+      "type": "sound",
+      "key": " Sound     ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "bluetooth",
+      "key": "󰂯 Bluetooth ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wifi",
+      "key": " Wi-Fi     ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "locale",
+      "key": " Locale    ",
       "keyColor": "blue"
     },
     {
       "type": "wm",
-      "key": "│ ├ WM     ",
+      "key": " WM        ",
       "keyColor": "blue"
     },
     {
       "type": "de",
-      "key": "│ ├ DE     ",
+      "key": " DE        ",
       "keyColor": "blue"
     },
     {
       "type": "wmtheme",
-      "key": "│ ├󰉼 THEME  ",
+      "key": "󰉼 WM Theme  ",
       "keyColor": "blue"
     },
+    {
+      "type": "theme",
+      "key": " GTK Theme ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "icons",
+      "key": "󰀻 Icons     ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "cursor",
+      "key": "➶ Cursor    ",
+      "keyColor": "blue"
+    },
+    "separator",
     {
       "type": "terminal",
-      "key": "│ ├ TERM   ",
-      "keyColor": "blue"
-    },
-    {
-      "type": "terminalfont",
-      "key": "│ ├ FONT   ",
-      "keyColor": "blue"
-    },
-    {
-      "type": "shell",
-      "key": "│ ├󱆃 SHELL  ",
-      "keyColor": "blue"
-    },
-    {
-      "type": "packages",
-      "key": "│ └󰏖 PKGS   ",
-      "keyColor": "blue"
-    },
-    {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌────────────────Age / Uptime / Update───────────────┐"
-    },
-    {
-      "type": "command",
-      "key": "│ 󱦟 AGE    ",
-      "keyColor": "magenta",
-      "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
-    },
-    {
-      "type": "uptime",
-      "key": "│ 󱫐 UPTIME ",
+      "key": " Terminal  ",
       "keyColor": "magenta"
     },
     {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘"
+      "type": "terminalfont",
+      "key": " Term Font ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "shell",
+      "key": "󱆃 Shell     ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "editor",
+      "key": " Editor    ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 Packages  ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "uptime",
+      "key": "󱫐 Uptime    ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "command",
+      "key": "󰲉 OS Age    ",
+      "keyColor": "magenta",
+      "text": "b=$(stat -c %W /); [ \"$b\" -eq 0 ] && b=$(stat -c %W /etc/machine-id); echo \"$(( ($(date +%s) - b) / 86400 )) days ($(date -d @$b +%F))\""
+    },
+    {
+      "type": "datetime",
+      "key": "󰃰 Date      ",
+      "keyColor": "magenta",
+      "format": "{weekday}, {day-pretty}-{month-pretty}-{year} {hour-pretty}:{minute-pretty}"
     },
     "break",
-    "colors"
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 1,
+      "brightness": "normal"
+    },
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 1,
+      "brightness": "light"
+    }
   ]
 }

@@ -12,11 +12,11 @@ border:
   radius: 12
   
   # Hex border colors in 0xAARRGGBB format:
-  # Inactive border: Charcoal Gray (Catppuccin Crust - 0xff313244)
-  color: 0xff313244
-  
-  # Active focused border: Pastel Lavender / Mauve (Catppuccin Mauve - 0xffcba6f7)
-  focus_color: 0xffcba6f7
+  # Inactive border: Rosé Pine Moon Overlay - 0xff393552
+  color: 0xff393552
+
+  # Active focused border: Rosé Pine Moon Iris - 0xffc4a7e7
+  focus_color: 0xffc4a7e7
 
 # Gaps between adjacent tiled windows (in pixels)
 inner_gaps:

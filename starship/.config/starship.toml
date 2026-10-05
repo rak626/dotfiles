@@ -6,8 +6,8 @@ $git_status \
 $cmd_duration\
 $character"""
 
-# palette = "rose_pine_moon"
 palette = "one_dark"
+# palette = "everforest"
 
 [username]
 show_always = false
@@ -79,3 +79,43 @@ purple = "#c4a7e7"
 cyan = "#ea9a97"
 white = "#e0def4"
 orange = "#f6c177"
+
+[palettes.everforest]
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+purple = "#d699b6"
+cyan = "#83c092"
+white = "#d3c6aa"
+orange = "#e69875"
+
+[palettes.kanagawa]
+red = "#c34043"
+green = "#76946a"
+yellow = "#c0a36e"
+blue = "#7e9cd8"
+purple = "#957fb8"
+cyan = "#6a9589"
+white = "#dcd7ba"
+orange = "#ffa066"
+
+[palettes.tokyo_night]
+red = "#f7768e"
+green = "#9ece6a"
+yellow = "#e0af68"
+blue = "#7aa2f7"
+purple = "#bb9af7"
+cyan = "#7dcfff"
+white = "#c0caf5"
+orange = "#ff9e64"
+
+[palettes.catppuccin_mocha]
+red = "#f38ba8"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+blue = "#89b4fa"
+purple = "#f5c2e7"
+cyan = "#94e2d5"
+white = "#cdd6f4"
+orange = "#fab387"

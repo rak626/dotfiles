@@ -1,0 +1,12 @@
+// Zed keymap — empty means use `base_keymap` from settings.json (JetBrains).
+// See: https://zed.dev/docs/key-bindings
+// Example:
+// [
+//   {
+//     "context": "Workspace",
+//     "bindings": {
+//       "ctrl-shift-t": "workspace::NewTerminal"
+//     }
+//   }
+// ]
+[]

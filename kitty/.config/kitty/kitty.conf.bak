@@ -6,11 +6,11 @@ include current-theme.conf
 # END_KITTY_THEME
 
 #: Fonts
-font_family Annotation Mono
+font_family      IosevkaRakesh Nerd Font
 bold_font        IosevkaRakesh Nerd Font
 italic_font      IosevkaRakesh Nerd Font
 bold_italic_font IosevkaRakesh Nerd Font
-font_size 10.0
+font_size        14.0
 
 #: Font Rendering & Spacing
 modify_font cell_height +1px

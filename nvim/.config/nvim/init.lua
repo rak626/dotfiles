@@ -29,13 +29,15 @@ local function ensure_plugin(url, name)
   end
 end
 
-ensure_plugin("https://github.com/navarasu/onedark.nvim", "onedark")
+-- One Dark Pro theme
+ensure_plugin("https://github.com/navarasu/onedark.nvim", "onedark.nvim")
 
 -- 1. Setup the configuration safely
-require("onedark").setup({
-  style = "darker",
-  transparent = true,
-})
-
--- 2. Use the standard Neovim colorscheme command to load it instead of .load()
-vim.cmd("colorscheme onedark")
+local ok, onedark = pcall(require, "onedark")
+if ok then
+  onedark.setup({ style = "dark" })
+  onedark.load()
+else
+  -- 2. Fallback to standard colorscheme load
+  vim.cmd("colorscheme onedark")
+end
