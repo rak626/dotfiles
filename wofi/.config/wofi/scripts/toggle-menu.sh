@@ -8,5 +8,5 @@ set -euo pipefail
 if pgrep -f "[w]ofi --show drun" >/dev/null; then
   pkill -f "[w]ofi --show drun"
 else
-  exec wofi --show drun --columns 2 --lines 7 --prompt "  Search…"
+  exec wofi --show drun
 fi
